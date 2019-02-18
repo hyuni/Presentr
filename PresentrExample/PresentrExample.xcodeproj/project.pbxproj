@@ -23,6 +23,23 @@
 		25591534D92612E66093237C /* Pods_PresentrExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9985464B38C3FFC83D568727 /* Pods_PresentrExample.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		522E57DA221AF73500882945 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522E57D5221AF73500882945 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 102F7439B0B1A27DCD6D9D97E1A6BFFE;
+			remoteInfo = "Pods-PresentrExample";
+		};
+		522E57DC221AF73500882945 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522E57D5221AF73500882945 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 91423CBC37CE267F7AB2274475564662;
+			remoteInfo = Presentr;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		06BBD0471D383B80003436EB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -53,6 +70,7 @@
 		06A1F0BF1CF3D17E0057C79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06C00C762095478A00727CC2 /* PasstroughExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasstroughExampleViewController.swift; sourceTree = "<group>"; };
 		2D9A1F9F4161E3588659C3CF /* Pods-PresentrExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentrExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-PresentrExample/Pods-PresentrExample.release.xcconfig"; sourceTree = "<group>"; };
+		522E57D5221AF73500882945 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		9985464B38C3FFC83D568727 /* Pods_PresentrExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PresentrExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37B2AC285D84D58CC7D5CA3 /* Pods-PresentrExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentrExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PresentrExample/Pods-PresentrExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,10 +143,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		522E57D6221AF73500882945 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				522E57DB221AF73500882945 /* Pods_PresentrExample.framework */,
+				522E57DD221AF73500882945 /* Presentr.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		FC2179870F3AC2AF401182C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				9985464B38C3FFC83D568727 /* Pods_PresentrExample.framework */,
+				522E57D5221AF73500882945 /* Pods.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,12 +212,35 @@
 			mainGroup = 06A1F0A71CF3D17E0057C79B;
 			productRefGroup = 06A1F0B11CF3D17E0057C79B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 522E57D6221AF73500882945 /* Products */;
+					ProjectRef = 522E57D5221AF73500882945 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				06A1F0AF1CF3D17E0057C79B /* PresentrExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		522E57DB221AF73500882945 /* Pods_PresentrExample.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_PresentrExample.framework;
+			remoteRef = 522E57DA221AF73500882945 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522E57DD221AF73500882945 /* Presentr.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Presentr.framework;
+			remoteRef = 522E57DC221AF73500882945 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		06A1F0AE1CF3D17E0057C79B /* Resources */ = {
@@ -211,7 +262,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PresentrExample/Pods-PresentrExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PresentrExample/Pods-PresentrExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -220,7 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PresentrExample/Pods-PresentrExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PresentrExample/Pods-PresentrExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F965E49DDC461133DEBE58C5 /* [CP] Check Pods Manifest.lock */ = {
